@@ -20,7 +20,9 @@ invite code in their app. Invitations expire 15 minutes after they're created an
 can be used once.
 
 ### How do I export my data?
-You can share or print your logs from within the app.
+You can export your activity logs as CSV or PDF from within the app and share them.
+For a copy of all the personal data we hold about you, email
+[support@bean-studio.com](mailto:support@bean-studio.com).
 
 ### How do I delete my account and data?
 You can delete your account from within the app, which removes your baby profiles,
@@ -28,9 +30,10 @@ logged events, schedules, and account record. If you can't access the app, email
 **[support@bean-studio.com](mailto:support@bean-studio.com)** from your account
 email address and we'll process the deletion for you.
 
-### How do I manage or cancel a subscription?
-Subscriptions are billed by Apple or Google. Manage or cancel them in your App
-Store or Google Play account settings.
+### I bought Pro — how do I restore it on a new device?
+Pro is a one-time purchase, not a subscription, so there's nothing to renew or
+cancel. If you reinstall the app or switch devices, open the app and use **Restore
+purchases** while signed in to the same App Store or Google Play account.
 
 ## Privacy and terms
 

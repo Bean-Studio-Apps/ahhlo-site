@@ -7,8 +7,9 @@ permalink: /terms/
 <p class="updated">Last updated: 2 June 2026</p>
 
 These Terms of Use ("Terms") govern your use of the Tiny Triumphs app ("the app"),
-provided by Bean Studio ("we", "us"). By downloading or using the app, you agree to
-these Terms. If you don't agree, please don't use the app.
+provided by Bean Studio Apps ("we", "us"), 60 Paya Lebar Road, #06-28, Paya Lebar
+Square, Singapore 409051. By downloading or using the app, you agree to these Terms.
+If you don't agree, please don't use the app.
 
 ## Using the app
 
@@ -26,13 +27,14 @@ caregivers you invite. We don't claim ownership of your content and we don't use
 for advertising or model training. See our
 [Privacy Policy]({{ '/privacy/' | relative_url }}) for details.
 
-## Subscriptions and purchases
+## Purchases
 
-The app may offer optional paid subscriptions ("Pro"). Purchases are processed and
-billed by Apple's App Store or Google Play under their terms, and are subject to
-their refund policies. Subscription length, price, and renewal terms are shown at
-the point of purchase. You can manage or cancel a subscription in your App Store or
-Google Play account settings.
+The app offers an optional one-time purchase ("Pro") that unlocks additional
+features. Pro is **not** a subscription — there is no recurring charge and nothing to
+cancel. The purchase is processed and billed by Apple's App Store or Google Play
+under their terms, and is subject to their refund policies. The price is shown before
+you buy. If you reinstall the app or set up a new device, you can restore your Pro
+purchase from within the app using the same App Store or Google Play account.
 
 ## Caregiver sharing
 
@@ -46,7 +48,10 @@ Tiny Triumphs is a logging and organizing tool. It is **not** a medical device a
 does not provide medical, health, or professional advice. Anything the app shows —
 including schedules, summaries, or suggestions — is informational only. Always
 consult a qualified healthcare professional for decisions about your child's health,
-sleep, or feeding.
+sleep, or feeding. Do not use the app in an emergency — if you think your child
+needs medical attention, contact a healthcare professional or emergency services.
+You are solely responsible for any decisions you make based on information in the
+app.
 
 ## Availability and changes
 
@@ -57,11 +62,12 @@ changes we'll update the date above and, where appropriate, notify you in the ap
 
 ## Limitation of liability
 
-To the fullest extent permitted by law, Bean Studio is not liable for any indirect,
-incidental, or consequential damages arising from your use of the app, and our total
-liability for any claim relating to the app is limited to the amount you paid us for
-it in the twelve months before the claim. Nothing in these Terms limits liability
-that cannot be limited under applicable law.
+To the fullest extent permitted by law, Bean Studio Apps is not liable for any
+indirect, incidental, or consequential damages arising from your use of the app, and
+our total liability for any claim relating to the app is limited to the amount paid
+for your Pro purchase (whether collected by us or by the App Store or Google Play),
+or USD 50, whichever is greater. Nothing in these Terms limits liability that cannot
+be limited under applicable law.
 
 ## Termination
 
@@ -69,8 +75,25 @@ You can stop using the app and delete your account at any time. We may suspend o
 terminate access if you violate these Terms or use the app in a way that harms other
 users or the service.
 
+## Governing law
+
+These Terms are governed by the laws of Singapore, without regard to its
+conflict-of-laws rules. Subject to the "Resolving disputes" section below, you and
+Bean Studio Apps submit to the exclusive jurisdiction of the courts of Singapore for
+any dispute arising out of or relating to these Terms or the app. Nothing in this
+section deprives you of the protection of the mandatory consumer-protection laws of
+the country where you live.
+
+## Resolving disputes
+
+If you have a problem, please email us first — most issues can be resolved quickly
+and informally. Please contact us before starting any formal proceeding so we have a
+chance to help.
+
 ## Contact
 
 Questions about these Terms? Email
 [support@bean-studio.com](mailto:support@bean-studio.com) or visit our
 [Support page]({{ '/support/' | relative_url }}).
+
+Bean Studio Apps · 60 Paya Lebar Road, #06-28, Paya Lebar Square, Singapore 409051.
