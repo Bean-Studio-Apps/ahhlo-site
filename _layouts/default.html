@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{{ page.title }} · {{ site.title }}</title>
+  <link rel="stylesheet" href="{{ '/assets/style.css' | relative_url }}">
+</head>
+<body>
+  <header class="site-header">
+    <a class="brand" href="{{ '/' | relative_url }}">Tiny Triumphs</a>
+    <nav>
+      <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
+      <a href="{{ '/terms/' | relative_url }}">Terms</a>
+      <a href="{{ '/support/' | relative_url }}">Support</a>
+    </nav>
+  </header>
+
+  <main class="content">
+    <h1>{{ page.title }}</h1>
+    {{ content }}
+  </main>
+
+  <footer class="site-footer">
+    <p>&copy; {{ site.time | date: '%Y' }} Bean Studio. All rights reserved.</p>
+  </footer>
+</body>
+</html>

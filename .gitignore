@@ -1,0 +1,11 @@
+# Jekyll build output (GitHub Pages builds server-side; never commit these)
+_site/
+.jekyll-cache/
+.jekyll-metadata
+.sass-cache/
+
+# Ruby/Bundler (only present if you run a local preview)
+vendor/
+.bundle/
+
+.DS_Store

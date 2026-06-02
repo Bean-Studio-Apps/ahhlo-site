@@ -1,0 +1,14 @@
+title: Tiny Triumphs
+description: The fastest, most private baby logging app.
+# Project-page repo, so the site lives under /tinytriumphs-site.
+# If you move to a custom domain later, set baseurl to "" and add a CNAME file.
+baseurl: "/tinytriumphs-site"
+url: "https://bean-studio-apps.github.io"
+
+# A theme isn't used — the shared _layouts/default.html owns all markup.
+# Keep the build minimal and predictable.
+plugins: []
+exclude:
+  - README.md
+  - Gemfile
+  - Gemfile.lock
