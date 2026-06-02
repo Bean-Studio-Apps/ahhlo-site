@@ -1,29 +1,30 @@
 // Landing-page behavior: painted-door funnel.
-//  - On load:        record a 'view' event.
-//  - On CTA click:   record a 'cta_click' event, reveal the reserve form.
-//  - On submit:      insert the email into the waitlist.
-// Events/inserts go straight to Supabase PostgREST with the publishable key
-// (RLS allows anon INSERT only — rows can't be read back from the client).
+//
+// All writes go through the `landing_capture` Supabase Edge Function — the
+// landing tables no longer accept direct anonymous inserts. The function adds
+// per-IP rate limiting, a honeypot check, validation, and email dedupe.
+//  - On load:      record a 'view' event.
+//  - On CTA click: record a 'cta_click' event, reveal the reserve form.
+//  - On submit:    send the email (+ honeypot) to the waitlist.
 
 (function () {
   var URL = window.SPROUT_SUPABASE_URL;
   var KEY = window.SPROUT_SUPABASE_KEY;
 
-  function post(path, payload) {
-    return fetch(URL + '/rest/v1/' + path, {
+  function post(payload) {
+    return fetch(URL + '/functions/v1/landing_capture', {
       method: 'POST',
       headers: {
         apikey: KEY,
         Authorization: 'Bearer ' + KEY,
         'Content-Type': 'application/json',
-        Prefer: 'return=minimal',
       },
       body: JSON.stringify(payload),
     });
   }
 
   function track(kind) {
-    post('landing_events', { kind: kind }).catch(function () {});
+    post({ action: 'event', kind: kind }).catch(function () {});
   }
 
   document.addEventListener('DOMContentLoaded', function () {
@@ -33,6 +34,7 @@
     var reserve = document.getElementById('reserve');
     var form = document.getElementById('waitlist-form');
     var email = document.getElementById('email');
+    var hp = document.getElementById('hp-website');
     var error = document.getElementById('reserve-error');
     var done = document.getElementById('reserve-done');
 
@@ -56,9 +58,9 @@
       btn.disabled = true;
       btn.textContent = 'Reserving…';
 
-      post('waitlist', { email: value, source: 'landing' })
+      post({ action: 'waitlist', email: value, website: hp ? hp.value : '' })
         .then(function (res) {
-          if (!res.ok) throw new Error('insert failed');
+          if (!res.ok) throw new Error('request failed');
           form.hidden = true;
           done.hidden = false;
         })

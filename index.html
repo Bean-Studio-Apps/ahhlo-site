@@ -58,6 +58,15 @@ permalink: /
         placeholder="you@example.com"
         autocomplete="email"
         required>
+      <!-- Honeypot: hidden from users; bots that fill it are silently dropped. -->
+      <input
+        type="text"
+        id="hp-website"
+        name="website"
+        class="hp-field"
+        tabindex="-1"
+        autocomplete="off"
+        aria-hidden="true">
       <button type="submit">Reserve my spot</button>
     </form>
 
