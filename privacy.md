@@ -54,6 +54,12 @@ through the store.
 **Technical data.** Our hosting provider processes standard connection information
 (such as IP address) to deliver the service and protect against abuse.
 
+**Usage data.** We record a small number of basic in-app events — for example,
+when the upgrade screen is shown or which feature prompted it — to understand what
+people find useful and improve the app. This is **first-party only**: it is stored
+in our own database, never shared or sold, and we use no third-party analytics SDKs
+to collect it.
+
 ## Where your data is stored
 
 The app keeps a copy of your data **on your device** (in local storage) and syncs
