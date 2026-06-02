@@ -75,6 +75,12 @@ You can stop using the app and delete your account at any time. We may suspend o
 terminate access if you violate these Terms or use the app in a way that harms other
 users or the service.
 
+**Inactive accounts.** To avoid keeping stale data, we may delete an account and all
+of its data after **12 months of inactivity** (no sign-in and no logged activity). We
+may send a reminder to the email address on the account before doing so, and signing
+in at any time resets this period. See our
+[Privacy Policy]({{ '/privacy/' | relative_url }}) for details.
+
 ## Governing law
 
 These Terms are governed by the laws of Singapore, without regard to its

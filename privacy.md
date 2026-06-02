@@ -120,12 +120,17 @@ their access.
 
 ## Data retention and deletion
 
-Your data is kept while your account is active. You can delete your account and its
-associated data — baby profiles, logged events, schedules, and account record —
-from within the app, or by emailing us (see
-[Support]({{ '/support/' | relative_url }})). After deletion, residual copies in
-routine encrypted backups are purged within 30 days as those backups age out of our
-provider's normal rotation.
+Your data is kept while your account is active. If an account remains **inactive for
+12 months** — with no sign-in and no logged activity — we may delete the account and
+all of its associated data so that we don't retain stale records. We may first send a
+reminder to the email address on the account, and signing in at any time resets the
+12-month period.
+
+You can also delete your account and its associated data — baby profiles, logged
+events, schedules, and account record — at any time from within the app, or by
+emailing us (see [Support]({{ '/support/' | relative_url }})). After deletion, residual
+copies in routine encrypted backups are purged within 30 days as those backups age out
+of our provider's normal rotation.
 
 ## Your rights
 
