@@ -1,0 +1,219 @@
+:root {
+  --ink: #20242a;
+  --muted: #5d6671;
+  --accent: #d9795f;        /* warm coral, matches the app */
+  --accent-dark: #c2664e;
+  --bg: #fbf7f3;            /* soft warm off-white */
+  --card: #ffffff;
+  --line: #ece4dc;
+  --maxw: 760px;
+}
+
+* { box-sizing: border-box; }
+
+html { -webkit-text-size-adjust: 100%; }
+
+body {
+  margin: 0;
+  color: var(--ink);
+  background: var(--bg);
+  font: 17px/1.6 -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+.wrap {
+  max-width: var(--maxw);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.nav {
+  padding: 28px 0 8px;
+}
+
+.brand {
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: var(--accent);
+  letter-spacing: -0.2px;
+}
+
+/* ── Hero ───────────────────────────────────────────────────────── */
+.hero {
+  padding: 56px 0 40px;
+  text-align: center;
+}
+
+.eyebrow {
+  text-transform: uppercase;
+  letter-spacing: 1.5px;
+  font-size: 0.78rem;
+  font-weight: 700;
+  color: var(--accent);
+  margin: 0 0 14px;
+}
+
+.hero h1 {
+  font-size: 2.9rem;
+  line-height: 1.08;
+  letter-spacing: -1px;
+  margin: 0 0 18px;
+  font-weight: 800;
+}
+
+.hero .sub {
+  max-width: 540px;
+  margin: 0 auto 32px;
+  color: var(--muted);
+  font-size: 1.12rem;
+}
+
+.cta {
+  display: inline-block;
+  background: var(--accent);
+  color: #fff;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 1.15rem;
+  padding: 16px 36px;
+  border-radius: 14px;
+  box-shadow: 0 8px 20px rgba(217, 121, 95, 0.28);
+  transition: transform 0.08s ease, background 0.15s ease;
+}
+
+.cta:hover { background: var(--accent-dark); }
+.cta:active { transform: translateY(1px); }
+
+.cta-note {
+  margin: 14px 0 0;
+  color: var(--muted);
+  font-size: 0.92rem;
+}
+
+/* ── Features ───────────────────────────────────────────────────── */
+.features {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 18px;
+  margin: 28px 0 56px;
+}
+
+.feature {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 16px;
+  padding: 22px 22px 20px;
+}
+
+.feature h3 {
+  margin: 0 0 6px;
+  font-size: 1.08rem;
+}
+
+.feature p {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.98rem;
+}
+
+@media (max-width: 560px) {
+  .hero h1 { font-size: 2.2rem; }
+  .features { grid-template-columns: 1fr; }
+}
+
+/* ── Reserve (painted door) ─────────────────────────────────────── */
+.reserve {
+  background: var(--card);
+  border: 1px solid var(--line);
+  border-radius: 20px;
+  padding: 36px 28px;
+  text-align: center;
+  margin-bottom: 48px;
+}
+
+.reserve h2 {
+  margin: 0 0 10px;
+  font-size: 1.6rem;
+  letter-spacing: -0.4px;
+}
+
+.reserve > p {
+  max-width: 480px;
+  margin: 0 auto 24px;
+  color: var(--muted);
+}
+
+#waitlist-form {
+  display: flex;
+  gap: 10px;
+  max-width: 460px;
+  margin: 0 auto;
+}
+
+#waitlist-form input {
+  flex: 1;
+  padding: 14px 16px;
+  font-size: 1rem;
+  border: 1px solid var(--line);
+  border-radius: 12px;
+  background: var(--bg);
+  color: var(--ink);
+}
+
+#waitlist-form input:focus {
+  outline: 2px solid var(--accent);
+  outline-offset: 1px;
+}
+
+#waitlist-form button {
+  background: var(--accent);
+  color: #fff;
+  border: 0;
+  font-weight: 700;
+  font-size: 1rem;
+  padding: 0 22px;
+  border-radius: 12px;
+  cursor: pointer;
+  white-space: nowrap;
+}
+
+#waitlist-form button:hover { background: var(--accent-dark); }
+#waitlist-form button:disabled { opacity: 0.6; cursor: default; }
+
+.reserve-error { color: #b3402a; font-size: 0.92rem; margin: 12px 0 0; }
+
+.reserve-fineprint {
+  margin: 16px 0 0;
+  font-size: 0.85rem;
+  color: var(--muted);
+}
+
+.reserve-fineprint a { color: var(--accent-dark); }
+
+.reserve-done h2 { margin-top: 8px; }
+
+@media (max-width: 480px) {
+  #waitlist-form { flex-direction: column; }
+  #waitlist-form button { padding: 14px; }
+}
+
+/* ── Footer ─────────────────────────────────────────────────────── */
+.foot {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 12px;
+  padding: 24px 0 40px;
+  border-top: 1px solid var(--line);
+  color: var(--muted);
+  font-size: 0.88rem;
+}
+
+.foot nav a {
+  margin-left: 16px;
+  color: var(--muted);
+  text-decoration: none;
+}
+
+.foot nav a:first-child { margin-left: 0; }
+.foot nav a:hover { color: var(--ink); }

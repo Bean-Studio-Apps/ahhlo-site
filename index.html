@@ -1,0 +1,86 @@
+---
+layout: landing
+title: Tiny Triumphs — calm, private baby tracking
+description: Track your baby's sleep and feeds in two taps. Real-time sync with your partner. No ads, no data selling, no subscription — a one-time $19.99 lifetime unlock.
+permalink: /
+---
+
+<main class="wrap">
+  <header class="nav">
+    <span class="brand">Tiny Triumphs</span>
+  </header>
+
+  <section class="hero">
+    <p class="eyebrow">For new parents</p>
+    <h1>Your baby's day,<br>tracked in two taps.</h1>
+    <p class="sub">
+      Log sleep and feeds in seconds. Sync in real time with your partner or
+      caregiver. No ads, no data selling, no subscription — just a calm, private
+      app you pay for once.
+    </p>
+
+    <a href="#reserve" id="cta" class="cta">Get Lifetime — $19.99</a>
+    <p class="cta-note">One-time purchase. No subscription. Yours forever.</p>
+  </section>
+
+  <section class="features">
+    <div class="feature">
+      <h3>Two-tap logging</h3>
+      <p>Sleep, feeds, diapers, and pumping — recorded faster than you can find your coffee.</p>
+    </div>
+    <div class="feature">
+      <h3>Real-time caregiver sync</h3>
+      <p>You log a feed, your partner sees it instantly. Everyone on the same page.</p>
+    </div>
+    <div class="feature">
+      <h3>Private by design</h3>
+      <p>No third-party ad or analytics SDKs. We never sell your data or run ML on it. It stays yours.</p>
+    </div>
+    <div class="feature">
+      <h3>Your own trends</h3>
+      <p>Clear summaries and reports built only from the data you logged — nothing else.</p>
+    </div>
+  </section>
+
+  <!-- Painted-door reserve form (revealed on CTA click). -->
+  <section class="reserve" id="reserve" hidden>
+    <h2>Launching on the App Store soon</h2>
+    <p>
+      Drop your email and we'll send you a founding link the day it goes live.
+      That's the only email you'll get — no spam, no sharing.
+    </p>
+
+    <form id="waitlist-form" novalidate>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="you@example.com"
+        autocomplete="email"
+        required>
+      <button type="submit">Reserve my spot</button>
+    </form>
+
+    <p class="reserve-error" id="reserve-error" hidden>
+      Something went wrong — please try again.
+    </p>
+    <p class="reserve-fineprint">
+      We store your email only to send the launch link. See our
+      <a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a>.
+    </p>
+
+    <div class="reserve-done" id="reserve-done" hidden>
+      <h2>You're on the list 🎉</h2>
+      <p>We'll email you a founding link the moment Tiny Triumphs launches.</p>
+    </div>
+  </section>
+
+  <footer class="foot">
+    <p>&copy; {{ site.time | date: '%Y' }} Bean Studio Apps</p>
+    <nav>
+      <a href="{{ '/privacy/' | relative_url }}">Privacy</a>
+      <a href="{{ '/terms/' | relative_url }}">Terms</a>
+      <a href="{{ '/support/' | relative_url }}">Support</a>
+    </nav>
+  </footer>
+</main>
