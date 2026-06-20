@@ -1,14 +1,14 @@
-# tinytriumphs-site
+# ahhlo-site
 
 Public site hosting the **Privacy Policy**, **Terms of Use**, and **Support** page
 for the Ahhlo app. Served via GitHub Pages.
 
 ## Live URLs
 
-- Landing: https://bean-studio-apps.github.io/tinytriumphs-site/
-- Privacy: https://bean-studio-apps.github.io/tinytriumphs-site/privacy/
-- Terms: https://bean-studio-apps.github.io/tinytriumphs-site/terms/
-- Support: https://bean-studio-apps.github.io/tinytriumphs-site/support/
+- Landing: https://bean-studio-apps.github.io/ahhlo-site/
+- Privacy: https://bean-studio-apps.github.io/ahhlo-site/privacy/
+- Terms: https://bean-studio-apps.github.io/ahhlo-site/terms/
+- Support: https://bean-studio-apps.github.io/ahhlo-site/support/
 
 ## Editing
 
@@ -27,7 +27,7 @@ local preview you'll need Ruby + Bundler, then:
 
 ```bash
 gem install bundler jekyll
-jekyll serve   # http://localhost:4000/tinytriumphs-site/
+jekyll serve   # http://localhost:4000/ahhlo-site/
 ```
 
 ## GitHub Pages setting

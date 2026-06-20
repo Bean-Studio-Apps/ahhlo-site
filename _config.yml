@@ -1,8 +1,8 @@
 title: Ahhlo
 description: The fastest, most private baby logging app.
-# Project-page repo, so the site lives under /tinytriumphs-site.
+# Project-page repo, so the site lives under /ahhlo-site.
 # If you move to a custom domain later, set baseurl to "" and add a CNAME file.
-baseurl: "/tinytriumphs-site"
+baseurl: "/ahhlo-site"
 url: "https://bean-studio-apps.github.io"
 
 # A theme isn't used — the shared _layouts/default.html owns all markup.
