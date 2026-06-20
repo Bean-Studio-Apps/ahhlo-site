@@ -4,7 +4,7 @@ title: Support
 permalink: /support/
 ---
 
-Need help with Tiny Triumphs? We're happy to help.
+Need help with Ahhlo? We're happy to help.
 
 ## Contact us
 

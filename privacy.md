@@ -6,7 +6,7 @@ permalink: /privacy/
 
 <p class="updated">Last updated: 2 June 2026</p>
 
-This policy explains what personal data the Tiny Triumphs app ("the app")
+This policy explains what personal data the Ahhlo app ("the app")
 collects, how it is used, and the choices you have. The app is provided by Bean
 Studio Apps ("we", "us"), the data controller, located at 60 Paya Lebar Road,
 #06-28, Paya Lebar Square, Singapore 409051.

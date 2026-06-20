@@ -1,7 +1,7 @@
 # tinytriumphs-site
 
 Public site hosting the **Privacy Policy**, **Terms of Use**, and **Support** page
-for the Tiny Triumphs app. Served via GitHub Pages.
+for the Ahhlo app. Served via GitHub Pages.
 
 ## Live URLs
 

@@ -6,7 +6,7 @@ permalink: /terms/
 
 <p class="updated">Last updated: 2 June 2026</p>
 
-These Terms of Use ("Terms") govern your use of the Tiny Triumphs app ("the app"),
+These Terms of Use ("Terms") govern your use of the Ahhlo app ("the app"),
 provided by Bean Studio Apps ("we", "us"), 60 Paya Lebar Road, #06-28, Paya Lebar
 Square, Singapore 409051. By downloading or using the app, you agree to these Terms.
 If you don't agree, please don't use the app.
@@ -44,7 +44,7 @@ invite to a baby can view and add to that baby's activity log until you remove t
 
 ## Not medical advice
 
-Tiny Triumphs is a logging and organizing tool. It is **not** a medical device and
+Ahhlo is a logging and organizing tool. It is **not** a medical device and
 does not provide medical, health, or professional advice. Anything the app shows —
 including schedules, summaries, or suggestions — is informational only. Always
 consult a qualified healthcare professional for decisions about your child's health,
