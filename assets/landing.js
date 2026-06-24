@@ -1,11 +1,9 @@
-// Landing-page behavior: painted-door funnel.
+// Landing-page behavior: lightweight funnel tracking.
 //
-// All writes go through the `landing_capture` Supabase Edge Function — the
-// landing tables no longer accept direct anonymous inserts. The function adds
-// per-IP rate limiting, a honeypot check, validation, and email dedupe.
-//  - On load:      record a 'view' event.
-//  - On CTA click: record a 'cta_click' event, reveal the reserve form.
-//  - On submit:    send the email (+ honeypot) to the waitlist.
+// Events go through the `landing_capture` Supabase Edge Function, which adds
+// per-IP rate limiting and validation.
+//  - On load:            record a 'view' event.
+//  - On App Store click: record a 'cta_click' event (the link still navigates).
 
 (function () {
   var URL = window.SPROUT_SUPABASE_URL;
@@ -31,44 +29,10 @@
     track('view');
 
     var cta = document.getElementById('cta');
-    var reserve = document.getElementById('reserve');
-    var form = document.getElementById('waitlist-form');
-    var email = document.getElementById('email');
-    var hp = document.getElementById('hp-website');
-    var error = document.getElementById('reserve-error');
-    var done = document.getElementById('reserve-done');
-
-    cta.addEventListener('click', function (e) {
-      e.preventDefault();
-      track('cta_click');
-      reserve.hidden = false;
-      reserve.scrollIntoView({ behavior: 'smooth' });
-      email.focus();
-    });
-
-    form.addEventListener('submit', function (e) {
-      e.preventDefault();
-      error.hidden = true;
-      var value = email.value.trim();
-      if (value.indexOf('@') < 1 || value.length < 3) {
-        error.hidden = false;
-        return;
-      }
-      var btn = form.querySelector('button');
-      btn.disabled = true;
-      btn.textContent = 'Reserving…';
-
-      post({ action: 'waitlist', email: value, website: hp ? hp.value : '' })
-        .then(function (res) {
-          if (!res.ok) throw new Error('request failed');
-          form.hidden = true;
-          done.hidden = false;
-        })
-        .catch(function () {
-          btn.disabled = false;
-          btn.textContent = 'Reserve my spot';
-          error.hidden = false;
-        });
-    });
+    if (cta) {
+      cta.addEventListener('click', function () {
+        track('cta_click');
+      });
+    }
   });
 })();
