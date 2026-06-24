@@ -19,7 +19,13 @@ permalink: /
       baby tracker.
     </p>
 
-    <a href="#reserve" id="cta" class="cta">Get Pro</a>
+    <div class="stores">
+      <a
+        href="https://apps.apple.com/us/app/ahhlo-baby-tracker/id6773663949"
+        id="cta"
+        class="cta">Download on the App Store</a>
+      <p class="store-soon">Android — coming soon to Google Play</p>
+    </div>
     <p class="cta-note">No ads. No subscription. No data selling.</p>
   </section>
 
@@ -39,48 +45,6 @@ permalink: /
     <div class="feature">
       <h3>Your own trends</h3>
       <p>Clear summaries and reports built only from the data you logged — nothing else.</p>
-    </div>
-  </section>
-
-  <!-- Painted-door reserve form (revealed on CTA click). -->
-  <section class="reserve" id="reserve" hidden>
-    <h2>Launching on the App Store soon</h2>
-    <p>
-      Drop your email and we'll send you a founding link the day it goes live.
-      That's the only email you'll get — no spam, no sharing.
-    </p>
-
-    <form id="waitlist-form" novalidate>
-      <input
-        type="email"
-        id="email"
-        name="email"
-        placeholder="you@example.com"
-        autocomplete="email"
-        required>
-      <!-- Honeypot: hidden from users; bots that fill it are silently dropped. -->
-      <input
-        type="text"
-        id="hp-website"
-        name="website"
-        class="hp-field"
-        tabindex="-1"
-        autocomplete="off"
-        aria-hidden="true">
-      <button type="submit">Reserve my spot</button>
-    </form>
-
-    <p class="reserve-error" id="reserve-error" hidden>
-      Something went wrong — please try again.
-    </p>
-    <p class="reserve-fineprint">
-      We store your email only to send the launch link. See our
-      <a href="{{ '/privacy/' | relative_url }}">Privacy Policy</a>.
-    </p>
-
-    <div class="reserve-done" id="reserve-done" hidden>
-      <h2>You're on the list 🎉</h2>
-      <p>We'll email you a founding link the moment Ahhlo launches.</p>
     </div>
   </section>
 
