@@ -4,7 +4,7 @@ title: Privacy Policy
 permalink: /privacy/
 ---
 
-<p class="updated">Last updated: 2 June 2026</p>
+<p class="updated">Last updated: 9 September 2026</p>
 
 This policy explains what personal data the Ahhlo app ("the app")
 collects, how it is used, and the choices you have. The app is provided by Bean
@@ -52,7 +52,10 @@ details. We store a record of whether your account has unlocked Pro, validated
 through the store.
 
 **Technical data.** Our hosting provider processes standard connection information
-(such as IP address) to deliver the service and protect against abuse.
+(such as IP address) to deliver the service and protect against abuse. We also
+record which app version and platform (iOS or Android) your account last used,
+so we can support your device and keep older versions of the app working. This
+is stored with your account, first-party only, and is not a device identifier.
 
 **Usage data.** We record a small number of basic in-app events — for example,
 when the upgrade screen is shown or which feature prompted it — to understand what
