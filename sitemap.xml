@@ -1,0 +1,17 @@
+---
+layout: null
+permalink: /sitemap.xml
+---
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+{%- for p in site.pages -%}
+  {%- if p.title and p.sitemap != false -%}
+  <url>
+    <loc>{{ site.url }}{{ site.baseurl }}{{ p.url }}</loc>
+    {%- if p.last_modified %}
+    <lastmod>{{ p.last_modified }}</lastmod>
+    {%- endif %}
+  </url>
+  {%- endif -%}
+{%- endfor %}
+</urlset>
