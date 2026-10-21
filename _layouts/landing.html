@@ -8,6 +8,28 @@
   <meta property="og:title" content="{{ page.title }}">
   <meta property="og:description" content="{{ page.description | default: site.description }}">
   <meta property="og:type" content="website">
+  <meta property="og:url" content="{{ page.url | absolute_url }}">
+  <link rel="canonical" href="{{ page.url | absolute_url }}">
+  {%- if page.url == '/' %}
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "SoftwareApplication",
+    "name": "Ahhlo",
+    "alternateName": "Ahhlo: Newborn Baby Tracker",
+    "description": {{ page.description | jsonify }},
+    "applicationCategory": "HealthApplication",
+    "operatingSystem": "iOS, Android",
+    "url": "{{ '/' | absolute_url }}",
+    "downloadUrl": [
+      "https://apps.apple.com/us/app/ahhlo-baby-tracker/id6773663949",
+      "https://play.google.com/store/apps/details?id=com.beanstudio.tinytriumphs"
+    ],
+    "offers": { "@type": "Offer", "price": "0", "priceCurrency": "USD" },
+    "publisher": { "@type": "Organization", "name": "Bean Studio Apps" }
+  }
+  </script>
+  {%- endif %}
   <link rel="stylesheet" href="{{ '/assets/landing.css' | relative_url }}">
 </head>
 <body>
