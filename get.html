@@ -1,0 +1,52 @@
+---
+layout: null
+permalink: /get/
+sitemap: false
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="noindex">
+  <title>Get Ahhlo</title>
+  <link rel="canonical" href="{{ '/' | absolute_url }}">
+  <link rel="stylesheet" href="{{ '/assets/landing.css' | relative_url }}">
+  <!--
+    The link in an Ahhlo care-team invite (sprout #553). Sends a phone to its
+    store and shows both store links to everything else. No analytics, no
+    cookies, no network calls beyond the redirect: this page is shared in
+    chat messages, so it must not record who opened it (sprout decisions §30).
+  -->
+  <script>
+    (function () {
+      var ios = 'https://apps.apple.com/app/id6773663949';
+      var play = 'https://play.google.com/store/apps/details?id=com.beanstudio.tinytriumphs';
+      var ua = navigator.userAgent || '';
+      // iPadOS reports a Mac user agent; touch points tell them apart.
+      var isIos = /iPhone|iPad|iPod/.test(ua) ||
+        (/Macintosh/.test(ua) && navigator.maxTouchPoints > 1);
+      if (isIos) location.replace(ios);
+      else if (/Android/.test(ua)) location.replace(play);
+    })();
+  </script>
+</head>
+<body>
+  <main class="wrap">
+    <header class="nav">
+      <span class="brand">Ahhlo</span>
+    </header>
+    <section class="hero">
+      <h1>Get Ahhlo</h1>
+      <p class="sub">
+        Install the app, sign in, then tap <strong>Join a care team</strong> and
+        enter the code from your invite.
+      </p>
+      <div class="stores">
+        <a href="https://apps.apple.com/app/id6773663949" class="cta">Download on the App Store</a>
+        <a href="https://play.google.com/store/apps/details?id=com.beanstudio.tinytriumphs" class="cta">Get it on Google Play</a>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
